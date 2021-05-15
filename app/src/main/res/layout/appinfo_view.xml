@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@android:color/holo_purple">
+
+    <ImageView
+        android:id="@+id/imgAppIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/txtAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgAppIcon"
+        android:text="App Name"
+        android:paddingTop="5dp"
+        android:paddingLeft="16dp"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/txtPackageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgAppIcon"
+        android:layout_below="@id/txtAppName"
+        android:text="Package Name"
+        android:paddingVertical="5dp"
+        android:paddingLeft="16dp"
+        android:textStyle="italic"
+        android:textSize="11sp"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/txtClassName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgAppIcon"
+        android:layout_below="@id/txtPackageName"
+        android:text="Class Name"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:textSize="10sp"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/txtVersionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Version Name"
+        android:textStyle="bold"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/txtVersionCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtVersionName"
+        android:text="Version Code"
+        android:textSize="10sp"
+        android:textStyle="italic"/>
+
+</RelativeLayout>
